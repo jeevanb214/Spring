@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+		<bean id="employee" class="Spak.Employee" scope="prototype">
+		<property name="name" value="saran "/>
+		<property name="name1" value="karthik "/>
+		<property  name="address" ref="address"/>
+		</bean>
+		
+		<bean id="address" class="Spak.Address">
+		<property name="city" value="nizampet"/>
+		<property  name="state" value="ts"/>
+		</bean>
+	
+	   <!--   <bean id="employee1" class="Spak.Employee">
+		<property name="name" value="jeevan "/>
+		<property  name="address" ref="address1"/>
+		</bean>		
+		<bean id="address1" class="Spak.Address">
+		<property name="city" value="hyd"/>
+		<property  name="state" value="ap"/>
+		</bean>-->
+		
+
+</beans>
